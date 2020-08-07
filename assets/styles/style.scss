@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+$dark: #21252b;
+$firstGrad: #48c6ef;
+$secGrad: #6f86d6;
+$acc: #6566ff;
+
+@mixin fGrad {
+  //   background: linear-gradient(120deg, #1e3c72, #2a5298);
+  background-color: #1f2033;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #18192b;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  //   background-color: $dark;
+  @include fGrad();
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 10px rgba($color: #000000, $alpha: 0.2);
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $acc;
+  }
+}
+
+main {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  .page {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    opacity: 0;
+    pointer-events: none;
+    // transition: all 1s ease;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-weight: 500;
+        font-size: 2rem;
+        color: white;
+      }
+    }
+    .content {
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      padding: 1rem 0.5rem;
+      .card {
+        width: 100%;
+        height: 20vh;
+        // background-color: $dark;
+        @include fGrad();
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.6);
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-rows: 60% 40%;
+
+        .card-header {
+          //   background-color: red;
+          display: grid;
+          grid-template-columns: 30% 70%;
+          .icon-container {
+            // background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+              height: 3rem;
+              width: 3rem;
+              fill: white;
+            }
+          }
+          .text-container {
+            // background-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p {
+              color: $acc;
+            }
+            h2 {
+              color: white;
+              font-weight: 300;
+              font-size: 2rem;
+            }
+          }
+        }
+        .card-footer {
+          //   background-color: blue;
+          color: white;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .reactor {
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+  .pressurized {
+    position: absolute;
+    top: 0;
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+  .normal {
+    position: absolute;
+    top: 0;
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+footer {
+  width: 100vw;
+  height: 10vh;
+  margin-top: 0.5rem;
+  //   background-color: $dark;
+  @include fGrad();
+  color: white;
+  display: flex;
+  svg {
+    fill: white;
+  }
+  .reactor-btn {
+    flex: 1;
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.25s ease;
+    &.active {
+      color: $acc;
+      svg {
+        fill: $acc;
+      }
+    }
+  }
+  .pressurized-btn {
+    flex: 1;
+    // background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.25s ease;
+    &.active {
+      color: $acc;
+      svg {
+        fill: $acc;
+      }
+    }
+  }
+  .normal-btn {
+    flex: 1;
+    // background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.25s ease;
+    &.active {
+      color: $acc;
+      svg {
+        fill: $acc;
+      }
+    }
+  }
+}

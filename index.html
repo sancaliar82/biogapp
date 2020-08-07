@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Biogas - Mobile</title>
+  </head>
+  <body>
+    <header>
+      <h1>Biogas Monitoring</h1>
+    </header>
+    <main>
+      <article class="page reactor active">
+        <div class="header">
+          <h1>Reactor</h1>
+        </div>
+        <section class="content">
+          <div class="card temperature-a">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Temperature A</p>
+                <h2><span class="value">-</span> &#176;C</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+          <div class="card temperature-b">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Temperature B</p>
+                <h2><span class="value">-</span> &#176;C</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+          <div class="card pressure">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Pressure</p>
+                <h2><span class="value">-</span> Bar</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+          <div class="card flow">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Flow</p>
+                <h2><span class="value">-</span> CMH</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article class="page pressurized">
+        <div class="header">
+          <h1>Pressurized Storage</h1>
+        </div>
+        <section class="content">
+          <div class="card temperature">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Temperature</p>
+                <h2><span class="value">-</span> &#176;C</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+          <div class="card pressure">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Pressure</p>
+                <h2><span class="value">-</span> Bar</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+          <div class="card volume">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Volume</p>
+                <h2>
+                  <span class="value">-</span> m<sup><small>3</small></sup>
+                </h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+          <div class="card flow">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Flow</p>
+                <h2><span class="value">-</span> CMH</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article class="page normal">
+        <div class="header">
+          <h1>Normal Storage</h1>
+        </div>
+        <section class="content">
+          <div class="card temperature">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Temperature</p>
+                <h2><span class="value">-</span> &#176;C</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+
+          <div class="card pressure">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Pressure</p>
+                <h2><span class="value">-</span> Bar</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+          <div class="card flow">
+            <div class="card-header">
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <rect fill="none" height="24" width="24" />
+                  <g>
+                    <path
+                      d="M7.5,21H2V9h5.5V21z M14.75,3h-5.5v18h5.5V3z M22,11h-5.5v10H22V11z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="text-container">
+                <p>Flow</p>
+                <h2><span class="value">-</span> CMH</h2>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>MAX : <span class="max">-</span></p>
+              <p>|</p>
+              <p>MIN : <span class="min">-</span></p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="reactor-btn active">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M11 17c0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1-1 .45-1 1zm0-14v4h2V5.08c3.39.49 6 3.39 6 6.92 0 3.87-3.13 7-7 7s-7-3.13-7-7c0-1.68.59-3.22 1.58-4.42L12 13l1.41-1.41-6.8-6.8v.02C4.42 6.45 3 9.05 3 12c0 4.97 4.02 9 9 9 4.97 0 9-4.03 9-9s-4.03-9-9-9h-1zm7 9c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zM6 12c0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1-1 .45-1 1z"
+          />
+        </svg>
+        <small>Reactor</small>
+      </div>
+      <div class="pressurized-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path
+            d="M3 15h8v-2H3v2zm0 4h8v-2H3v2zm0-8h8V9H3v2zm0-6v2h8V5H3zm10 0h8v14h-8V5z"
+          />
+        </svg>
+        <small>Pressurized</small>
+      </div>
+      <div class="normal-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M18 7V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3H5v6l3 6v3h8v-3l3-6V7h-1zM8 4h8v3h-2V5h-1v2h-2V5h-1v2H8V4z"
+          />
+        </svg>
+        <small>Normal</small>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
